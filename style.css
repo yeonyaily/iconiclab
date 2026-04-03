@@ -1,11 +1,12 @@
 :root {
-  --bg: #f6f8fb;
-  --bg-alt: #ffffff;
+  --bg: #e9f0f8;
+  --bg-strong: #dde8f5;
+  --bg-alt: #f8fbff;
   --text: #0f172a;
   --muted: #475569;
   --line: rgba(15, 23, 42, 0.08);
-  --card-bg: rgba(255, 255, 255, 0.82);
-  --shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+  --card-bg: rgba(255, 255, 255, 0.86);
+  --shadow: 0 12px 32px rgba(15, 23, 42, 0.07);
   --radius-lg: 28px;
   --radius-md: 20px;
   --max-width: 1120px;
@@ -25,7 +26,7 @@ body {
     -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
     "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
   color: var(--text);
-  background: linear-gradient(180deg, #eef3f8 0%, #f8fafc 100%);
+  background: linear-gradient(180deg, #e3edf8 0%, #eef4fa 42%, #f7fafe 100%);
   line-height: 1.65;
   word-break: keep-all;
 }
@@ -52,6 +53,7 @@ a {
   text-align: center;
   padding: 100px 0 80px;
   position: relative;
+  background: linear-gradient(180deg, rgba(221, 232, 245, 0.72) 0%, rgba(233, 240, 248, 0.38) 100%);
 }
 
 .hero::before {
@@ -59,8 +61,8 @@ a {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at top left, rgba(148, 163, 184, 0.15), transparent 28%),
-    radial-gradient(circle at top right, rgba(59, 130, 246, 0.08), transparent 24%);
+    radial-gradient(circle at top left, rgba(100, 116, 139, 0.14), transparent 30%),
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 25%);
   pointer-events: none;
 }
 
@@ -77,7 +79,7 @@ a {
   margin-bottom: 26px;
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.76);
   backdrop-filter: blur(10px);
   font-size: 0.82rem;
   font-weight: 700;
@@ -106,8 +108,8 @@ h1 {
 }
 
 .section.alt {
-  background: rgba(255, 255, 255, 0.45);
-  border-top: 1px solid rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.46);
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid rgba(15, 23, 42, 0.04);
   backdrop-filter: blur(6px);
 }
@@ -138,11 +140,150 @@ h1 {
   padding: 30px 28px;
   border-radius: var(--radius-md);
   background: var(--card-bg);
-  border: 1px solid rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   box-shadow: var(--shadow);
   backdrop-filter: blur(12px);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
 .card:hover {
-  transform: translateY(-4px
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.09);
+}
+
+.card h3 {
+  margin: 0 0 12px;
+  font-size: 1.18rem;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* Contact를 footer처럼 분리 */
+.contact-section {
+  padding: 90px 0 84px;
+  background: #0f172a;
+  color: #f8fafc;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.contact-section h2 {
+  color: #ffffff;
+}
+
+.contact-section .section-text {
+  color: rgba(248, 250, 252, 0.78);
+}
+
+.contact-box {
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.contact-box p {
+  margin: 0;
+  color: rgba(248, 250, 252, 0.9);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.contact-box p + p {
+  margin-top: 10px;
+}
+
+.contact-box strong {
+  display: inline-block;
+  min-width: 82px;
+  color: #ffffff;
+}
+
+.contact-box a {
+  color: rgba(248, 250, 252, 0.92);
+  transition: opacity 0.2s ease;
+}
+
+.contact-box a:hover {
+  opacity: 0.72;
+}
+
+.footer {
+  padding: 22px 0 34px;
+  background: #0b1220;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.94rem;
+  color: rgba(248, 250, 252, 0.52);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 82vh;
+    padding: 90px 0 70px;
+  }
+
+  .section {
+    padding: 88px 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .container,
+  .container.narrow {
+    width: min(calc(100% - 28px), var(--max-width));
+  }
+
+  .badge {
+    margin-bottom: 22px;
+    padding: 9px 15px;
+    font-size: 0.76rem;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 11vw, 3.2rem);
+    line-height: 1.18;
+  }
+
+  .hero-text {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .section {
+    padding: 76px 0;
+  }
+
+  .section h2 {
+    margin-bottom: 16px;
+    font-size: 1.9rem;
+  }
+
+  .card {
+    padding: 24px 22px;
+    border-radius: 18px;
+  }
+
+  .contact-section {
+    padding: 72px 0 68px;
+  }
+
+  .contact-box strong {
+    min-width: 70px;
+  }
+}
