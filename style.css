@@ -51,7 +51,7 @@ a {
   text-align: center;
   padding: 72px 0 64px;
   position: relative;
-  background: linear-gradient(180deg, #cfe0f2 0%, #dbe8f6 100%);
+  background: rgba(255, 255, 255, 0.28);
   border-bottom: 1px solid rgba(15, 23, 42, 0.06);
 }
 
