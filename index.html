@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="meta.home.title">아이코닉 랩 — 매일 쓰고 싶은 앱을 만듭니다</title>
+  <meta name="description" data-i18n-content="meta.home.desc"
+        content="아이코닉 랩(Iconic Lab)은 매일 쓰고 싶은 앱을 디자인하고 개발하는 작은 스튜디오입니다." />
+  <meta name="theme-color" content="#05080f" />
+  <meta property="og:title" data-i18n-content="meta.home.title" content="아이코닉 랩 — 매일 쓰고 싶은 앱을 만듭니다" />
+  <meta property="og:description" data-i18n-content="meta.home.desc" content="매일 쓰고 싶은 앱을 만드는 스튜디오." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" />
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a id="top" tabindex="-1" aria-hidden="true"></a>
+  <!-- background art -->
+  <div class="bg-fx" aria-hidden="true">
+    <span class="aurora a"></span>
+    <span class="aurora b"></span>
+    <span class="aurora c"></span>
+  </div>
+  <div class="bg-fade" aria-hidden="true"></div>
+
+  <!-- nav -->
+  <nav class="nav" aria-label="Primary">
+    <a class="brand" href="index.html" aria-label="Iconic Lab home">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <defs>
+          <linearGradient id="nm" x1="8" y1="6" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#22d3ee"/><stop offset=".45" stop-color="#38bdf8"/><stop offset="1" stop-color="#6366f1"/>
+          </linearGradient>
+        </defs>
+        <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#nm)"/>
+        <path d="M32 14c2.4 9.1 6.9 13.6 16 16-9.1 2.4-13.6 6.9-16 16-2.4-9.1-6.9-13.6-16-16 9.1-2.4 13.6-6.9 16-16Z" fill="#fff" fill-opacity=".96"/>
+      </svg>
+      <span>Iconic&nbsp;Lab</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#apps" data-i18n="nav.work">앱</a>
+      <a href="#about" data-i18n="nav.about">소개</a>
+      <a href="#process" data-i18n="nav.process">방식</a>
+      <a href="#contact" data-i18n="nav.contact">문의</a>
+    </div>
+
+    <div class="nav-right">
+      <!-- language switcher -->
+      <div class="lang">
+        <button class="lang-btn" aria-haspopup="true" aria-expanded="false" data-i18n-aria="lang.label" aria-label="언어">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/>
+          </svg>
+          <span class="lang-current">한국어</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="lang-menu">
+          <button data-lang="ko"><span data-i18n="lang.ko">한국어</span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></button>
+          <button data-lang="en"><span data-i18n="lang.en">English</span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></button>
+          <button data-lang="zh"><span data-i18n="lang.zh">中文</span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></button>
+          <button data-lang="ja"><span data-i18n="lang.ja">日本語</span><svg class="tick" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m5 12 5 5 9-11"/></svg></button>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn btn-primary"><span class="nav-cta-text" data-i18n="nav.cta">프로젝트 문의</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- hero -->
+    <header class="hero">
+      <span class="hero-spot" aria-hidden="true"></span>
+      <div class="shell">
+        <span class="pill reveal"><span class="dot"></span><span data-i18n="hero.eyebrow">앱을 만드는 스튜디오</span></span>
+        <h1 class="h-display reveal" data-d="1">
+          <span data-i18n="hero.title1">매일 쓰고 싶은</span><br />
+          <span class="grad-text" data-i18n="hero.title2">앱을 만듭니다</span>
+        </h1>
+        <p class="hero-sub reveal" data-d="2" data-i18n="hero.sub">
+          아이코닉 랩은 작은 아이디어를 매일의 습관이 되는 앱으로 완성합니다. 군더더기 없는 디자인과 단단한 개발로요.
+        </p>
+        <div class="hero-cta reveal" data-d="3">
+          <a href="#apps" class="btn btn-primary" data-i18n="hero.cta1">우리 앱 보기</a>
+          <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2">프로젝트 문의</a>
+        </div>
+
+        <div class="hero-stats reveal" data-d="4">
+          <div class="stat"><div class="n grad-text" data-i18n="stat1.num">3+</div><div class="l" data-i18n="stat1.label">출시한 앱</div></div>
+          <div class="stat"><div class="n grad-text" data-i18n="stat2.num">120K+</div><div class="l" data-i18n="stat2.label">누적 사용자</div></div>
+          <div class="stat"><div class="n grad-text" data-i18n="stat3.num">4.9</div><div class="l" data-i18n="stat3.label">평균 별점</div></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>iOS&nbsp;&nbsp; Android&nbsp;&nbsp; Flutter&nbsp;&nbsp; SwiftUI&nbsp;&nbsp; Kotlin&nbsp;&nbsp; UX&nbsp;Design&nbsp;&nbsp; Motion&nbsp;&nbsp; Prototyping&nbsp;&nbsp;</span>
+        <span>iOS&nbsp;&nbsp; Android&nbsp;&nbsp; Flutter&nbsp;&nbsp; SwiftUI&nbsp;&nbsp; Kotlin&nbsp;&nbsp; UX&nbsp;Design&nbsp;&nbsp; Motion&nbsp;&nbsp; Prototyping&nbsp;&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- apps -->
+    <section id="apps" class="section-pad">
+      <div class="shell">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-i18n="apps.eyebrow">우리가 만든 앱</span>
+          <h2 class="h-display" data-i18n="apps.title">작은 아이디어를, 매일의 습관으로.</h2>
+          <p data-i18n="apps.sub">각 앱은 하나의 분명한 쓸모에서 시작합니다. 카드를 눌러 자세히 보거나 바로 방문해보세요.</p>
+        </div>
+
+        <div class="apps-grid">
+          <!-- Pulse -->
+          <article class="app-card reveal" data-d="1"
+                   style="--accent:#22d3ee;--accent-soft:rgba(34,211,238,.16);--accent-shadow:rgba(34,211,238,.6)">
+            <div class="top">
+              <img class="app-ic" src="assets/img/pulse.svg" alt="Pulse" width="58" height="58" />
+              <span class="app-cat" data-i18n="pulse.cat">건강 · 습관</span>
+            </div>
+            <h3>Pulse</h3>
+            <p class="tag" data-i18n="pulse.tag">매일의 리듬을 한눈에</p>
+            <p class="desc" data-i18n="pulse.desc">습관, 수면, 운동을 부드럽게 기록하고 나의 흐름을 읽어주는 웰빙 트래커.</p>
+            <div class="actions">
+              <a class="app-link" href="apps/pulse/"><span data-i18n="apps.cardcta">자세히 보기</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+              <!-- TODO: replace with the app's real representative domain -->
+              <a class="app-visit" aria-label="Pulse 사이트 방문" href="https://pulse.iconiclab.kr" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:14px"><path d="M10 14 21 3M15 3h6v6M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+                <span data-i18n="apps.visit">방문</span></a>
+            </div>
+          </article>
+
+          <!-- Nimbus -->
+          <article class="app-card reveal" data-d="2"
+                   style="--accent:#818cf8;--accent-soft:rgba(99,102,241,.18);--accent-shadow:rgba(99,102,241,.6)">
+            <div class="top">
+              <img class="app-ic" src="assets/img/nimbus.svg" alt="Nimbus" width="58" height="58" />
+              <span class="app-cat" data-i18n="nimbus.cat">생산성 · 메모</span>
+            </div>
+            <h3>Nimbus</h3>
+            <p class="tag" data-i18n="nimbus.tag">생각이 머무는 가장 가벼운 공간</p>
+            <p class="desc" data-i18n="nimbus.desc">떠오른 생각을 한 번에 담고 알아서 정리되는, 부담 없는 메모 앱.</p>
+            <div class="actions">
+              <a class="app-link" href="apps/nimbus/"><span data-i18n="apps.cardcta">자세히 보기</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+              <!-- TODO: replace with the app's real representative domain -->
+              <a class="app-visit" aria-label="Nimbus 사이트 방문" href="https://nimbus.iconiclab.kr" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:14px"><path d="M10 14 21 3M15 3h6v6M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+                <span data-i18n="apps.visit">방문</span></a>
+            </div>
+          </article>
+
+          <!-- Orbit -->
+          <article class="app-card reveal" data-d="3"
+                   style="--accent:#38bdf8;--accent-soft:rgba(56,189,248,.16);--accent-shadow:rgba(56,189,248,.6)">
+            <div class="top">
+              <img class="app-ic" src="assets/img/orbit.svg" alt="Orbit" width="58" height="58" />
+              <span class="app-cat" data-i18n="orbit.cat">소셜 · 일정</span>
+            </div>
+            <h3>Orbit</h3>
+            <p class="tag" data-i18n="orbit.tag">가까운 사람들과 시간을 맞추다</p>
+            <p class="desc" data-i18n="orbit.desc">친구·가족과 약속을 잡을 때, 가능한 시간을 한 번에 찾아주는 일정 앱.</p>
+            <div class="actions">
+              <a class="app-link" href="apps/orbit/"><span data-i18n="apps.cardcta">자세히 보기</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+              <!-- TODO: replace with the app's real representative domain -->
+              <a class="app-visit" aria-label="Orbit 사이트 방문" href="https://orbit.iconiclab.kr" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:14px"><path d="M10 14 21 3M15 3h6v6M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+                <span data-i18n="apps.visit">방문</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="section-pad">
+      <div class="shell about-grid">
+        <div class="about-copy reveal">
+          <span class="eyebrow" data-i18n="about.eyebrow">아이코닉 랩</span>
+          <h2 class="h-display" data-i18n="about.title">하나를 만들어도, 오래 사랑받게.</h2>
+          <p data-i18n="about.body">우리는 많은 앱을 빠르게 찍어내지 않습니다. 대신 매일 손이 가는 앱 하나를 끝까지 다듬습니다. 디자인과 개발이 한 사람의 머릿속처럼 맞물릴 때 좋은 앱이 나온다고 믿습니다.</p>
+        </div>
+        <div class="values">
+          <div class="value reveal" data-d="1">
+            <div class="vic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m12 3 2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5z"/></svg></div>
+            <div><h3 data-i18n="value1.title">디자인 우선</h3><p data-i18n="value1.desc">첫인상부터 마지막 탭까지, 모든 화면을 픽셀 단위로 매만집니다.</p></div>
+          </div>
+          <div class="value reveal" data-d="2">
+            <div class="vic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m8 6-5 6 5 6M16 6l5 6-5 6M13 4l-2 16"/></svg></div>
+            <div><h3 data-i18n="value2.title">단단한 개발</h3><p data-i18n="value2.desc">빠르고 안정적으로. 오래 써도 무겁지 않은 앱을 만듭니다.</p></div>
+          </div>
+          <div class="value reveal" data-d="3">
+            <div class="vic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.8 6.6a5 5 0 0 0-7.1 0L12 8.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 22l8.8-8.3a5 5 0 0 0 0-7.1Z"/></svg></div>
+            <div><h3 data-i18n="value3.title">사용자의 편</h3><p data-i18n="value3.desc">광고와 군더더기 대신, 정말 필요한 기능에 집중합니다.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- process -->
+    <section id="process" class="section-pad">
+      <div class="shell">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-i18n="process.eyebrow">일하는 방식</span>
+          <h2 class="h-display" data-i18n="process.title">아이디어에서 출시까지, 네 단계.</h2>
+          <p data-i18n="process.sub">작게 시작해 빠르게 보여드리고, 함께 다듬어 출시합니다.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal" data-d="1"><div class="k" data-i18n="step1.k">01</div><h3 data-i18n="step1.title">발견</h3><p data-i18n="step1.desc">풀고 싶은 문제와 사용자를 함께 정의합니다.</p></div>
+          <div class="step reveal" data-d="2"><div class="k" data-i18n="step2.k">02</div><h3 data-i18n="step2.title">설계</h3><p data-i18n="step2.desc">흐름과 화면을 디자인하고 프로토타입으로 확인합니다.</p></div>
+          <div class="step reveal" data-d="3"><div class="k" data-i18n="step3.k">03</div><h3 data-i18n="step3.title">개발</h3><p data-i18n="step3.desc">iOS·안드로이드를 한 코드베이스로 단단하게 만듭니다.</p></div>
+          <div class="step reveal" data-d="4"><div class="k" data-i18n="step4.k">04</div><h3 data-i18n="step4.title">출시</h3><p data-i18n="step4.desc">스토어 출시부터 업데이트까지 끝까지 함께합니다.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta band -->
+    <section class="section-pad" style="padding-top:0">
+      <div class="shell">
+        <div class="cta-band reveal">
+          <h2 class="h-display" data-i18n="cta.title">당신의 아이디어, 앱으로.</h2>
+          <p data-i18n="cta.sub">한 줄짜리 메모도 좋습니다. 어떤 앱을 그리고 계신지 들려주세요.</p>
+          <a href="#contact" class="btn btn-primary" data-i18n="cta.button">이야기 시작하기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="section-pad" style="padding-top:0">
+      <div class="shell">
+        <div class="contact-card reveal">
+          <div>
+            <span class="eyebrow" data-i18n="contact.eyebrow">문의</span>
+            <h2 class="h-display" data-i18n="contact.title">함께 만들어요.</h2>
+            <p data-i18n="contact.sub">새 프로젝트, 협업, 무엇이든 편하게 연락 주세요.</p>
+            <a class="contact-email grad-text" href="mailto:shka5.dev@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              shka5.dev@gmail.com
+            </a>
+          </div>
+          <a href="mailto:shka5.dev@gmail.com" class="btn btn-primary" data-i18n="contact.button">이메일 보내기</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="16" fill="url(#nm)"/><path d="M32 14c2.4 9.1 6.9 13.6 16 16-9.1 2.4-13.6 6.9-16 16-2.4-9.1-6.9-13.6-16-16 9.1-2.4 13.6-6.9 16-16Z" fill="#fff" fill-opacity=".96"/></svg>
+            <span>Iconic&nbsp;Lab</span>
+          </a>
+          <p data-i18n="footer.tagline">매일 쓰고 싶은 앱을 만드는 스튜디오.</p>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.apps">앱</h5>
+          <a href="apps/pulse/">Pulse</a>
+          <a href="apps/nimbus/">Nimbus</a>
+          <a href="apps/orbit/">Orbit</a>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.studio">스튜디오</h5>
+          <a href="#about" data-i18n="footer.about">소개</a>
+          <a href="#process" data-i18n="footer.process">방식</a>
+          <a href="#contact" data-i18n="footer.contact">문의</a>
+        </div>
+      </div>
+      <div class="footer-bot">
+        <span>© 2026 <span data-i18n="footer.biz">아이코닉 랩 · 개인사업자</span>. <span data-i18n="footer.rights">All rights reserved.</span></span>
+        <a href="#top" data-i18n="footer.top">맨 위로</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
